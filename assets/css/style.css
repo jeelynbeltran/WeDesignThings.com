@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Slabo 27px', serif;
+  font-size: 14px;
+}
 
 .contbg1{
    background-image: url("../images/bg.jpg");
@@ -11,12 +15,21 @@
 }
 .contbg2{
    background-image: url("../images/bg2.png");
-   height: 30vh;
+       padding: 150px 0 150px 0;
 }
-/*.contbg3{
+.contbg3{
    background-image: url("../images/bg3.png");
-   height: 50vh;
-}*/
+    padding: 150px 0 150px 0;
+}
+
+.contbg4{
+   background-image: url("../images/bg4.png");
+}
+
+textarea {
+   resize: none;
+}
+
 .btn-outline-secondary:hover{
   background-color: #f7600e!important;
 }
@@ -25,7 +38,9 @@
 }
 .btn{
   width: 130px;
+  height: 39px;
 }
+
 .mt-vh20{
 margin-top: 20vh;
 } 
@@ -35,10 +50,11 @@ margin-top: 10vh;
 .mt-50{
   margin-top: 90px;
 }
-
-.p-txt{
- font-size: 12px;
+footer{
+  background-color: #3b434c;
+  font-size: 14px;
 }
+
 
 .txt-orange{
   color:#f7600e;
@@ -54,10 +70,14 @@ margin-top: 10vh;
   font-size: 12px;
 }
 
+.font1{
+  font-family: 'Bree Serif', serif;
+}
+
 .ico-container {
   display: inline-block;
   width: 25%;
-  padding: 50px;
+  padding: 25px;
   margin: 0;
   text-align: center;
   min-width: 242px;
@@ -130,11 +150,10 @@ margin-top: 10vh;
 }
 
 .img_effect {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Bree Serif', serif;
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin: 10px;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -273,6 +292,9 @@ a{
   box-shadow: 0 0 0 rgba(239, 100, 1, 0.4);
   animation: pulse 2s infinite;
 }
+.row1{
+  font-family: 'Slabo 27px', serif;
+}
 .arrow{
   display: block;
 }
@@ -309,4 +331,129 @@ a{
       box-shadow: 0 0 0 0 rgba(204,169,44, 0);
   }
 }
+
+
+
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip0003 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 400px;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip0003 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip0003 img {
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  opacity: 1.0;
+  left: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure.snip0003 > div {
+  height: 100%;
+  right: -80px;
+  width: 70px;
+  position: absolute;
+  border-left: 2px solid #ffffff;
+  top: 0;
+  padding: 8px 4px;
+  color: #ffffff;
+  background: #f7600e;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure.snip0003 > div a i {
+  display: inline-block;
+  font-size: 32px;
+  color: #ffffff;
+  opacity: 0.75;
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 15px;
+  position: relative;
+  right: -60px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure.snip0003:hover img {
+  opacity: 0.5;
+  left: -60px;
+}
+figure.snip0003:hover > div {
+  right: 0;
+  opacity: 1;
+}
+figure.snip0003:hover > div a i {
+  right: 0;
+}
+figure.snip0003:hover a:first-child i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.snip0003:hover a:nth-child(2) i {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+figure.snip0003:hover a:nth-child(3) i {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+
+.fab-container {
+  margin: 1em;
+  position: fixed;
+  right: 0;
+}
+
+.fab1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+}
+.fab1:before {
+  content: attr(tooltip);
+  background: #595959;
+  padding: 4px 8px;
+  border-radius: 2px;
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  color: white;
+  font: 400 15px Roboto;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  transition: .3s;
+}
+.fab1:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.fab1:hover:before {
+  right: 110%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.top {
+  background: #f7600e url('https://cbwconline.com/IMG/Codepen/Up.svg') center no-repeat;
+}
+
+
 
